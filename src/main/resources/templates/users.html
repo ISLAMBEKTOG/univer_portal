@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>User Page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<table border="2">
+    <td>
+        <tr>Id</tr>
+        <tr>Username</tr>
+        <tr>Role</tr>
+    </td>
+    <td th:each="user: ${users}">
+        <tr th:text="${user.getId()}"></tr>
+        <tr th:text="${user.getUsername()}"></tr>
+        <tr th:text="${user.role.name}"></tr>
+    </td>
+</table>
+</body>
+</html>

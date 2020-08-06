@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="univer_portal_db@localhost" uuid="d381e032-840d-4a6d-a163-01d6f2a5b244">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/univer_portal_db?serverTimezone=UTC</jdbc-url>
+    </data-source>
+  </component>
+</project>

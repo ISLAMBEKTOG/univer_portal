@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="/webjars/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
+    <title>Student Page</title>
+</head>
+<body>
+<div id="top_back" style="top:-15pt">
+    <div style="text-align:center;">
+        <img id="top_logo" src="/static/img/login-logo-ps.png">
+    </div>
+</div>
+
+<form method="post" action="/login">
+    <input type="text" name="username" placeholder="Write username" />
+    <input type="password" name="password" placeholder="Write password" />
+    <button type="submit">Sign In</button>
+</form>
+<script src="/webjars/jquery/3.4.1/jquery.min.js"></script>
+<script src="/webjars/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
