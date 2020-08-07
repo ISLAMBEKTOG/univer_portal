@@ -1,25 +1,52 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="/webjars/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
-    <title>Student Page</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css"/>
+    <title>Login - Student Information System</title>
 </head>
 <body>
-<div id="top_back" style="top:-15pt">
-    <div style="text-align:center;">
-        <img id="top_logo" src="/static/img/login-logo-ps.png">
+<div class="page">
+    <div class="language_block">
+        <a href="?lng=kz"><img class="language_img" src="img/kz.png" title="Қазақ тілі"></a>&nbsp;
+        <a href="?lng=en"><img class="language_img" src="img/gb.png" title="English"></a>&nbsp;
+    </div>
+
+    <div class="line_block"></div>
+    <div class="top_back">
+        <img src="img/login-logo-ps.png">
+    </div>
+    <div class="line_block"></div>
+
+    <div class="login_block">
+        <div class="loginDiv">
+            <div class="loginTop">
+                <a class="loginLink" target="_blank" href="http://sdu.edu.kz/kz/">Suleyman Demirel University</a><br/>
+                <span class="loginTitle">Student Information System</span>
+            </div>
+
+            <form method="post" action="/login" autocomplete="off">
+                <div>
+                    <label class="input_label"><b>Student number</b></label>
+                    <input id="username" name="username" type="text" class="inp" autocomplete="off">
+                </div>
+                <div style="margin-top:10px">
+                    <label class="input_label"><b>Password</b></label>
+                    <input id="password" name="password" type="password" class="inp" autocomplete="off">
+                </div>
+                <input type="submit" class="q-button" name="LogIn" value=" Log in "><br>
+                <a class="loginLink" style="font-size: 12px;float: right;" href="/passwForgot">Can't access my account</a>
+            </form>
+        </div>
+    </div>
+    <div class="wac">
+        <img src="img/gmail.jpg">&nbsp;<a title="Login to SduMail" target="_blank" class="loginLink" style="font-size: 12px" href="http://mail.sdu.edu.kz/">Login to SduMail</a>
+    </div>
+    <div class="login_page_footer">
+        <div class="footer_text">Suleyman Demirel University © 2020</div>
     </div>
 </div>
 
-<form method="post" action="/login">
-    <input type="text" name="username" placeholder="Write username" />
-    <input type="password" name="password" placeholder="Write password" />
-    <button type="submit">Sign In</button>
-</form>
-<script src="/webjars/jquery/3.4.1/jquery.min.js"></script>
-<script src="/webjars/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
